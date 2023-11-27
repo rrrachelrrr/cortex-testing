@@ -6,6 +6,6 @@ info:
   x-cortex-groups:
   - python
   x-cortex-git:
-  github:
-    repository: rrrachelrrr/cortex-testing
+    github:
+      repository: rrrachelrrr/cortex-testing
 

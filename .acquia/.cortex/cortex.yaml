@@ -1,0 +1,7 @@
+openapi: 3.0.1
+info:
+  title: Acquia Service
+  description: This is my cool service.
+  x-cortex-tag: acquia-service
+  x-cortex-groups:
+  - python

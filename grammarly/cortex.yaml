@@ -1,0 +1,84 @@
+openapi: 3.0.1
+info:
+  title: Artifactory
+  description: "Artifactory is a universal artifact repository manager that supports\
+    \ all the major package formats (20+ languages including Go, and Helm) and is\
+    \ also integrated with all major build tools and CI servers currently available."
+  x-cortex-git:
+    gitlab:
+      repository: platform/artifactory
+  x-cortex-tag: artifactory
+  x-cortex-link:
+  - url: 
+    name: Jira Inventory ticket
+    type: DOCUMENTATION
+    description: Link to the Jira Inventory ticket
+  - url: 
+    name: 
+    type: ENDPOINT
+    description: Service endpoint
+  - url: 
+    name: Grafana dashboard
+    type: METRICS
+    description: Grafana dashboard
+  x-cortex-owners:
+  - type: EMAIL
+    email: 
+    description: Business Owner
+  - type: EMAIL
+    email: 
+    description: Technical Owner
+  - name: Developer Experience
+    type: GROUP
+  x-cortex-service-groups:
+  - service
+  - third-party-on-premise
+  - critical
+  - in-operation
+  x-cortex-custom-metadata:
+    red-zone:
+      value: false
+      description: "Service which process of store user texts [true|false]"
+    behind-vpn:
+      value: true
+      description: "Indicate whether VPN is required for accessing the service - [true|false]"
+    aws-regions:
+      value:
+      - us-east-1
+      description: List of AWS regions
+    aws-accounts:
+      value:
+      - platform
+      - qa-platform
+      description: List of AWS accounts
+    access-review:
+      value: service
+      description: "Define the on what level access to the service is granted [service|database|repository|file-server]"
+    pii-in-service:
+      value:
+      - none
+      description: |-
+        Define the list which personal data is processed by the service
+         - user data, user content (or real user texts which are collected during
+         the provision of the services for the users), employee data. If there is
+         no data in the service, please state none.
+    okta-integration:
+      value: integrated
+      description: "Choose the appropriate option for the service integration with\
+        \ Okta - [integrated|not-integrated|not-supported|not-applicable]"
+    g2track-product-id:
+      value: pror-5ilfwSGlsgDcibJ_gA_g
+      description: G2track Product ID
+    user-authorization:
+      value: okta
+      description: "Define whether access is granted in Okta or in the system internally\
+        \ - [okta|internal]"
+    user-authentication:
+      value: okta
+      description: "Method of user authentication - [okta|internal|google|salesforce]"
+    information-classification:
+      value: red
+      description: "[red|orange|yellow|green] according to "
+  x-cortex-static-analysis:
+    sonarqube:
+      project: platform_artifactory_AYWH6qts-MpIsySpxdqI

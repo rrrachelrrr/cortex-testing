@@ -3,3 +3,8 @@ info:
   title: Service A
   description: This is my cool service.
   x-cortex-tag: service-a
+x-cortex-custom-metadata:
+  language:
+  name: shell
+  version: "5.2"
+
